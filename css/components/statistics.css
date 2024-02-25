@@ -1,0 +1,45 @@
+/* 
+// *** *** *** Statistics *** *** ***
+*/
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: var(--max-w-main);
+    gap: 11.5rem;
+}
+
+.statistics-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.statistics-item-icon { width: 2.8rem; }
+
+.statistics-item-num {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.statistics-item-txt {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #999;
+}
+
+@media screen and (min-width: 1024px) {
+    .statistics { 
+        flex-direction: row; 
+        justify-content: space-around;
+        gap: 0;
+        margin-bottom: 10rem;
+    }
+
+    .statistics-item-num { font-size: 6rem; }
+    .statistics-item-txt { font-size: 1.5rem; }
+}

@@ -1,0 +1,19 @@
+/* 
+// *** *** *** Header *** *** ***
+*/
+.header { 
+    width: 100%; 
+    padding: var(--p-inline-hdr-ftr);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo { width: 9.7rem; }
+
+@media screen and (min-width: 1024px) {
+    .header-logo { width: 16rem; } 
+}

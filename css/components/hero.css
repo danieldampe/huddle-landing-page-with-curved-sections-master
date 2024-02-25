@@ -1,0 +1,47 @@
+/* 
+// *** *** *** Hero *** *** ***
+*/
+.hero { 
+    width: 100%;
+    padding-inline: var(--p-inline-main);
+    margin-bottom: 12rem; 
+}
+
+.hero-content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: var(--max-w-main);
+    margin-inline: auto;
+    text-align: center;
+    color: var(--color-very-dark-cyan);
+}
+
+.hero-title { 
+    font-size: 2.4rem; 
+    line-height: 3.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero-text { 
+    width: 100%;
+    max-width: 650px;
+    font-size: 1.2rem; 
+    line-height: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.hero-btn { margin-bottom: 10rem; }
+
+.hero-img { width: 100%; }
+
+@media screen and (min-width: 1024px) {
+    .hero-title { font-size: 3.2rem; }
+    .hero-text { 
+        font-size: 1.3rem; 
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+}

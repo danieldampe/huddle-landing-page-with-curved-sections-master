@@ -1,0 +1,104 @@
+/* 
+// *** *** *** Features *** *** ***
+*/
+.features { 
+    width: 100%; 
+    margin-bottom: 7rem;
+}
+
+.features-subsection-bg-top,
+.features-subsection-bg-top-img,
+.features-subsection-bg-bottom,
+.features-subsection-bg-bottom-img { width: 100%; }
+
+/* 
+// *** *** *** Inner *** *** ***
+*/
+.features-subsection-inner {
+    width: 100%;
+    padding-block: 8rem 6.5rem;
+    padding-inline: var(--p-inline-main);
+    background-color: #f6fbff;
+}
+
+.features-subsection:nth-child(2) >
+.features-subsection-inner { background-color: transparent; }
+
+/* 
+// *** *** *** Content *** *** ***
+*/
+.features-subsection-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    width: 100%;
+    max-width: var(--max-w-main-2);
+    margin-inline: auto;
+} 
+
+/* 
+// *** *** *** Header *** *** ***
+*/
+.features-subsection-img { 
+    width: 85%; 
+    margin-inline: auto;
+}
+
+/* 
+// *** *** *** Body *** *** ***
+*/
+.features-subsection-body { 
+    text-align: center; 
+    color: var(--color-very-dark-cyan);
+}
+
+.features-subsection-title { 
+    margin-bottom: 1.8rem;
+    font-size: 2rem; 
+}
+
+.features-subsection-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+    /* 
+    // *** *** *** Features *** *** ***
+    */
+    .features { margin-bottom: 11rem; }
+    /* 
+    // *** *** *** Subsection *** *** ***
+    */
+    .features-subsection:nth-child(2) { margin-block: 8.5rem 5rem; }
+    /* 
+    // *** *** *** Inner *** *** ***
+    */
+    .features-subsection-inner { padding-block: 4.5rem 2.8rem; }
+    /* 
+    // *** *** *** Content *** *** ***
+    */
+    .features-subsection-content { flex-direction: row-reverse; } 
+
+    .features-subsection:nth-child(2)
+    .features-subsection-content { flex-direction: row; } 
+    /* 
+    // *** *** *** Header *** *** ***
+    */
+    .features-subsection-header { width: 50%; }
+    .features-subsection-img { width: 100%; }
+    /* 
+    // *** *** *** Body *** *** ***
+    */
+    .features-subsection-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+        text-align: left;
+    }
+
+    .features-subsection-title { font-size: 2.65rem; }
+    .features-subsection-text { font-size: 1.1rem; }
+}

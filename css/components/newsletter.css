@@ -1,0 +1,65 @@
+/* 
+// *** *** *** Newsletter *** *** ***
+*/
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 550px;
+    color: var(--color-white);
+}
+
+.newsletter-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.newsletter-text { max-width: 380px; }
+
+/* 
+// *** *** *** Form *** *** ***
+*/
+.newsletter-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem 3rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-input,
+.newsletter-btn {
+    padding-block: 0.8rem;
+    border-radius: 5px;
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    padding-inline: 1rem;
+    border: 2px solid transparent;
+}
+
+.newsletter-input.is-active { border-color: var(--color-light-red); }
+
+.newsletter-btn {
+    padding-inline: 2.5rem;
+    border: none;
+    font-weight: 600;
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    cursor: pointer;
+}
+
+/* 
+// *** *** *** Message *** *** ***
+*/
+.newsletter-msg {
+    color: var(--color-light-red);
+    opacity: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .newsletter-text { margin-bottom: 1.4rem; }
+}
